@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Farmer Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="index_h1">Crop Dashboard</h1>
+    <p>Overview of your selected crops and details</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="select-crop.html">Select Crop</a>
+    <a href="knowledgebase.html">Knowledge Base</a>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h2>Your Selected Crop Details</h2>
+
+      <table>
+        <tr>
+          <th>State</th>
+          <td>[Selected State]</td>
+        </tr>
+        <tr>
+          <th>Season</th>
+          <td>[Selected Season]</td>
+        </tr>
+        <tr>
+          <th>Crop</th>
+          <td>[Selected Crop]</td>
+        </tr>
+        <tr>
+          <th>Sowing Date</th>
+          <td>[Selected Date]</td>
+        </tr>
+        <tr>
+          <th>Land Area</th>
+          <td>[Entered Area] acres</td>
+        </tr>
+      </table>
+      <button onclick="location.href='timeline.html?state=Telangana&season=Kharif&crop=Rice'">View Timeline</button>
+      <p style="color: #777;"><i>Note: This dashboard will be dynamic in the next phase with JS or backend.</i></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>FarmAssist</strong>. Empowering Farmers Across India.</p>
+  </footer>
+
+</body>
+</html>

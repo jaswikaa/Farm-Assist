@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Your Crop - Farmer Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Farmer Crop Selection</h1>
+    <p>Choose your state, season, and crop to get started</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="govt-info.html">Govt Inputs</a>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h2>Select Crop Details</h2>
+      <form action="dashboard.html" method="get">
+        
+        <!-- State Dropdown -->
+        <label for="state">State:</label>
+        <select name="state" id="state" required>
+          <option value="">-- Select State --</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Himachal Pradesh">Himachal Pradesh</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="West Bengal">West Bengal</option>
+        </select>
+
+        <!-- Season Dropdown -->
+        <label for="season">Season:</label>
+        <select name="season" id="season" required>
+          <option value="">-- Select Season --</option>
+          <option value="Kharif">Kharif (June to October)</option>
+          <option value="Rabi">Rabi (October to March)</option>
+          <option value="Zaid">Zaid (March - June)</option>
+        </select>
+        <br>
+        <!-- Crop Dropdown -->
+        <label for="crop">Crop:</label>
+        <select name="crop" id="crop" required>
+          <option value="">-- Select Crop --</option>
+
+          <!-- Andhra Pradesh -->
+          <option value="Rice">Rice</option>
+          <option value="Maize">Maize</option>
+          <option value="Sunflower">Sunflower</option>
+
+          <!-- Arunachal Pradesh -->
+          <option value="Millets">Millets</option>
+          <option value="Paddy">Paddy</option>
+          <option value="Maize">Maize</option>
+
+          <!-- Assam -->
+          <option value="Tea">Tea</option>
+          <option value="Paddy">Paddy</option>
+          <option value="Mustard">Mustard</option>
+
+          <!-- Bihar -->
+          <option value="Maize">Maize</option>
+          <option value="Wheat">Wheat</option>
+          <option value="Sugarcane">Sugarcane</option>
+
+          <!-- Chhattisgarh -->
+          <option value="Rice">Rice</option>
+          <option value="Lentils">Lentils</option>
+          <option value="Maize">Maize</option>
+
+          <!-- Goa -->
+          <option value="Cashew">Cashew</option>
+          <option value="Coconut">Coconut</option>
+          <option value="Rice">Rice</option>
+
+          <!-- Gujarat -->
+          <option value="Groundnut">Groundnut</option>
+          <option value="Cotton">Cotton</option>
+          <option value="Wheat">Wheat</option>
+
+          <!-- Haryana -->
+          <option value="Wheat">Wheat</option>
+          <option value="Mustard">Mustard</option>
+          <option value="Sugarcane">Sugarcane</option>
+
+          <!-- Himachal Pradesh -->
+          <option value="Apple">Apple</option>
+          <option value="Barley">Barley</option>
+          <option value="Potato">Potato</option>
+
+          <!-- Jharkhand -->
+          <option value="Paddy">Paddy</option>
+          <option value="Maize">Maize</option>
+          <option value="Pulses">Pulses</option>
+
+          <!-- Karnataka -->
+          <option value="Ragi">Ragi</option>
+          <option value="Tur">Tur</option>
+          <option value="Cotton">Cotton</option>
+
+          <!-- Kerala -->
+          <option value="Rubber">Rubber</option>
+          <option value="Coconut">Coconut</option>
+          <option value="Paddy">Paddy</option>
+
+          <!-- Madhya Pradesh -->
+          <option value="Soybean">Soybean</option>
+          <option value="Wheat">Wheat</option>
+          <option value="Gram">Gram</option>
+
+          <!-- Maharashtra -->
+          <option value="Jowar">Jowar</option>
+          <option value="Soybean">Soybean</option>
+          <option value="Sugarcane">Sugarcane</option>
+
+          <!-- Manipur -->
+          <option value="Paddy">Paddy</option>
+          <option value="Maize">Maize</option>
+          <option value="Ginger">Ginger</option>
+
+          <!-- Meghalaya -->
+          <option value="Turmeric">Turmeric</option>
+          <option value="Potato">Potato</option>
+          <option value="Ginger">Ginger</option>
+
+          <!-- Mizoram -->
+          <option value="Maize">Maize</option>
+          <option value="Paddy">Paddy</option>
+          <option value="Chilli">Chilli</option>
+
+          <!-- Nagaland -->
+          <option value="Rice">Rice</option>
+          <option value="Maize">Maize</option>
+          <option value="Pulses">Pulses</option>
+
+          <!-- Odisha -->
+          <option value="Rice">Rice</option>
+          <option value="Groundnut">Groundnut</option>
+          <option value="Pulses">Pulses</option>
+
+          <!-- Punjab -->
+          <option value="Wheat">Wheat</option>
+          <option value="Paddy">Paddy</option>
+          <option value="Sugarcane">Sugarcane</option>
+
+          <!-- Rajasthan -->
+          <option value="Bajra">Bajra</option>
+          <option value="Wheat">Wheat</option>
+          <option value="Barley">Barley</option>
+
+          <!-- Sikkim -->
+          <option value="Cardamom">Cardamom</option>
+          <option value="Maize">Maize</option>
+          <option value="Paddy">Paddy</option>
+
+          <!-- Tamil Nadu -->
+          <option value="Sugarcane">Sugarcane</option>
+          <option value="Rice">Rice</option>
+          <option value="Cotton">Cotton</option>
+
+          <!-- Telangana -->
+          <option value="Paddy">Paddy</option>
+          <option value="Cotton">Cotton</option>
+          <option value="Chickpea">Chickpea</option>
+
+          <!-- Tripura -->
+          <option value="Pineapple">Pineapple</option>
+          <option value="Paddy">Paddy</option>
+          <option value="Potato">Potato</option>
+
+          <!-- Uttar Pradesh -->
+          <option value="Sugarcane">Sugarcane</option>
+          <option value="Wheat">Wheat</option>
+          <option value="Paddy">Paddy</option>
+
+          <!-- Uttarakhand -->
+          <option value="Wheat">Wheat</option>
+          <option value="Rice">Rice</option>
+          <option value="Mandua">Mandua</option>
+
+          <!-- West Bengal -->
+          <option value="Jute">Jute</option>
+          <option value="Paddy">Paddy</option>
+          <option value="Potato">Potato</option>
+        </select>
+
+        <small style="color: #555;">Crop list includes top 2–3 per state. More filtering coming soon.</small>
+        <br>
+        <!-- Optional Inputs -->
+        <label for="sowing-date">Expected Sowing Date:</label>
+        <input type="date" id="sowing-date" name="sowing-date">
+
+        <label for="area">Land Area (in acres):</label>
+        <input type="number" id="area" name="area" placeholder="e.g., 2.5" step="0.1" min="0">
+
+        <!-- Submit Button -->
+        <button type="submit">Add Crop to Dashboard</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Smart Farming Assistant | Built for Capstone Project</p>
+  </footer>
+
+</body>
+</html>
